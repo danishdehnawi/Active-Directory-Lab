@@ -110,6 +110,22 @@ Full device name:
 
 ---
 
+## Results
+
+Successfully deployed a Windows Server 2019 Active Directory environment with:
+
+- Active Directory Domain Services (AD DS)
+- DNS Server Integration
+- DHCP Scope Configuration
+- RRAS/NAT for Internet Access
+- Windows 10 Domain-Joined Client
+- PowerShell Automation for 1,000+ User Accounts
+- Centralized User Authentication
+- Automated IP Address Assignment
+- Organizational Unit (OU) Management
+
+---
+
 ## Skills Demonstrated
 
 - Active Directory Administration
@@ -125,3 +141,28 @@ Full device name:
 - VirtualBox Virtualization
 - Windows Server Management
 - Network Troubleshooting
+
+---
+
+## Project Structure
+
+```text
+Active-Directory-Lab/
+│
+├── README.md
+│
+├── Screenshots/
+│   ├── active-directory-users.PNG
+│   ├── client-domain-objects.PNG
+│   ├── client-domain-joined.PNG
+│   ├── dhcp-leases.PNG
+│   ├── domain-controller.PNG
+│   ├── network-diagram.png
+│   ├── powershell-user-creation.PNG
+│   ├── rras-nat.PNG
+│   └── server-overview.PNG
+│
+└── Scripts/
+    ├── 1_CREATE_USERS.ps1
+    └── names.txt
+```
