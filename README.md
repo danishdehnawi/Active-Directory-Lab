@@ -23,7 +23,7 @@ Windows Server 2019 was configured with the following services:
 - DHCP
 - Routing and Remote Access (RRAS/NAT)
 
-![Server Overview](Screenshots/server-overview.png)
+![Server Overview](Screenshots/server-overview.PNG)
 
 ---
 
@@ -35,7 +35,7 @@ The server was promoted to a Domain Controller for the domain:
 
 The Domain Controller handles authentication, authorization, DNS services, and Active Directory management.
 
-![Domain Controller](Screenshots/domain-controller.png)
+![Domain Controller](Screenshots/domain-controller.PNG)
 
 ---
 
@@ -45,12 +45,12 @@ A PowerShell script was used to automatically create over 1,000 Active Directory
 
 Files used:
 
-- Create-Users.ps1
+- 1_CREATE_USERS.ps1
 - names.txt
 
 This automation simulates a real-world enterprise environment where large numbers of user accounts must be provisioned efficiently.
 
-![PowerShell User Creation](Screenshots/powershell-user-creation.png)
+![PowerShell User Creation](Screenshots/powershell-user-creation.PNG)
 
 ---
 
@@ -60,7 +60,7 @@ The PowerShell script successfully created user accounts inside the _USERS Organ
 
 This demonstrates bulk user provisioning and Active Directory administration.
 
-![Active Directory Users](Screenshots/active-directory-users.png)
+![Active Directory Users](Screenshots/active-directory-users.PNG)
 
 ---
 
@@ -74,7 +74,7 @@ DHCP Scope:
 - DHCP Range: 172.16.0.100 - 172.16.0.200
 - DNS Server: 172.16.0.1
 
-![DHCP Leases](Screenshots/dhcp-leases.png)
+![DHCP Leases](Screenshots/dhcp-leases.PNG)
 
 ---
 
@@ -84,17 +84,17 @@ Routing and Remote Access Services (RRAS) was configured to provide Network Addr
 
 This allows internal clients to access external networks through the Domain Controller.
 
-![RRAS NAT](Screenshots/rras-nat.png)
+![RRAS NAT](Screenshots/rras-nat.PNG)
 
 ---
 
 ## Domain-Joined Client
 
-A Windows 10 client workstation was successfully joined to the Active Directory domain.
+A Windows 10 workstation was successfully joined to the Active Directory domain.
 
 The computer object appears within Active Directory and can be managed centrally.
 
-![Client Domain Object](Screenshots/client-domain-object.png)
+![Client Domain Object](Screenshots/client-domain-objects.PNG)
 
 ---
 
@@ -106,7 +106,7 @@ Full device name:
 
 **CLIENT1.mydomain.com**
 
-![Client Domain Login](Screenshots/client-domain-joined.png)
+![Client Domain Login](Screenshots/client-domain-joined.PNG)
 
 ---
 
@@ -125,29 +125,3 @@ Full device name:
 - VirtualBox Virtualization
 - Windows Server Management
 - Network Troubleshooting
-
----
-
-## Project Structure
-
-```text
-Active-Directory-Lab/
-│
-├── README.md
-│
-├── Screenshots/
-│   ├── active-directory-users.png
-│   ├── client-domain-object.png
-│   ├── client-domain-joined.png
-│   ├── dhcp-leases.png
-│   ├── domain-controller.png
-│   ├── network-diagram.png
-│   ├── powershell-user-creation.png
-│   ├── rras-nat.png
-│   └── server-overview.png
-│
-└── Scripts/
-    ├── Create-Users.ps1
-    └── names.txt
-```
-
